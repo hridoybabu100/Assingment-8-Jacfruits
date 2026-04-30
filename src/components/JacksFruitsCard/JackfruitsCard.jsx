@@ -27,7 +27,7 @@ const JackfruitsCard = ({ fruit }) => {
             <p className="flex gap-2 items-center font-bold"><FcRating/> {fruit.rating}</p>
         </div>
         <div className="">
-            <Link href={`//all-jackfruits/${fruit.id}`}>
+            <Link href={`/all-jackfruits/${fruit.id}`}>
           <button className="btn w-full btn-primary">View Details</button>
             </Link>
         </div>
