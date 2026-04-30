@@ -11,6 +11,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { GrGoogle } from "react-icons/gr";
 
 export default function SignUpPage() {
   const onSubmit = async (e) => {
@@ -28,11 +29,15 @@ export default function SignUpPage() {
     });
     // console.log(data,error);
   };
-
+  const googleOnClick = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  };
   return (
     <div className="my-10">
       <Card className="border mx-auto w-125 py-10 mt-5">
-        <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+        <h1 className="text-center text-2xl font-bold">Sign In</h1>
 
         <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
           <TextField
@@ -85,7 +90,11 @@ export default function SignUpPage() {
               Reset
             </Button>
           </div>
+          <p className="text-center">Or</p>
         </Form>
+        <button onClick={googleOnClick} className="btn w-96 mx-auto rounded-2xl bg-primary text-white">
+          <GrGoogle></GrGoogle> Sing in with Goggole
+        </button>
       </Card>
     </div>
   );

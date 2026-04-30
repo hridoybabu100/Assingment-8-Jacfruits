@@ -2,8 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import logoImg from "../../images/jackfruits.jpg";
+import { authClient } from "@/lib/auth-client";
+import { Avatar } from "@heroui/react";
 
 const Navbar = () => {
+  const jackfruits = authClient.useSession();
+  const user = jackfruits.data?.user;
+  // console.log(jackfruits);
+
+  console.log(user);
+
   const links = (
     <>
       <Link href={"/"}>
@@ -28,6 +36,10 @@ const Navbar = () => {
       </Link>
     </>
   );
+
+  const handleSingOut = async() => {
+    await authClient.signOut();
+  }
   return (
     <div className="shadow-sm">
       <div className="navbar bg-base-100  max-w-[80%] mx-auto">
@@ -72,14 +84,39 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
+
         <div className="navbar-end flex gap-2">
-          <Link href={'/singin'}>
-          <button className="btn">Loggin</button>
-          </Link>
-          <Link href={'/singup'}>
-          <button className="btn">Singup</button>
-          </Link>
+          {!user && (
+            <ul className="flex gap-2">
+              <li>
+                {" "}
+                <Link href={"/singin"}>
+                  <button className="btn">Singin</button>
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link href={"/singup"}>
+                  <button className="btn">Singup</button>
+                </Link>
+              </li>
+            </ul>
+          )}
         </div>
+
+        {user && (
+          <div className="flex items-center gap-2">
+            <Avatar>
+              <Avatar.Image
+                alt={user?.title}
+                src={user?.image}
+                referrerPolicy="no-referrer"
+              />
+              <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+            </Avatar>
+            <button onClick={handleSingOut} className="btn">Logout</button>
+          </div>
+        )}
       </div>
     </div>
   );

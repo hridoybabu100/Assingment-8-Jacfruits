@@ -1,11 +1,34 @@
-import React from 'react';
+
+'use client'
+import { ContactModal } from "@/components/Modal/Modal";
+import { authClient } from "@/lib/auth-client";
+import { Avatar, Card } from "@heroui/react";
 
 const ProfilePage = () => {
-    return (
-        <div>
-            Profile
-        </div>
-    );
+  const jackfruits = authClient.useSession();
+  const user = jackfruits.data?.user;
+  // console.log(jackfruits);
+
+//   console.log(user);
+  return (
+    <div className="flex justify-center items-center my-10">
+      <Card className="w-120 text-center">
+        <Avatar  className="mx-auto">
+          <Avatar.Image
+            alt={user?.title}
+            src={user?.image}
+            referrerPolicy="no-referrer"
+          
+          />
+          <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+        </Avatar>
+    
+        <p className="text-xl font-bold text-black">{user?.name}</p>
+        <p>{user?.email}</p>
+        <ContactModal></ContactModal>
+      </Card>
+    </div>
+  );
 };
 
 export default ProfilePage;
