@@ -6,11 +6,12 @@ import { authClient } from "@/lib/auth-client";
 import { Avatar } from "@heroui/react";
 
 const Navbar = () => {
-  const jackfruits = authClient.useSession();
-  const user = jackfruits.data?.user;
+  const {data} = authClient.useSession();
+  
+  const user = data?.user;
   // console.log(jackfruits);
 
-  console.log(user);
+  console.log(user, 'user');
 
   const links = (
     <>

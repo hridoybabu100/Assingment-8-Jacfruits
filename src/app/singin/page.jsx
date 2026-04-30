@@ -10,7 +10,6 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
-import { useRouter } from "next/navigation";
 import { GrGoogle } from "react-icons/gr";
 
 export default function SignUpPage() {
