@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Here's a clean, modern README.md** for your **Jackfruits** project:
 
-## Getting Started
+```markdown
+# 🍈 Jackfruits
 
-First, run the development server:
+A beautiful, modern Next.js web application showcasing stunning jackfruit photography with authentication, dynamic routing, and a sleek UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Jackfruits Banner](https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2453997129.jpg)
+
+## ✨ Features
+
+- **Modern UI/UX** – Built with Tailwind CSS + DaisyUI + HeroUI (Radix-based components)
+- **Full Authentication** – Email/password + Google OAuth using **Better Auth** + MongoDB
+- **Dynamic Pages** – Home, All Jackfruits, Individual Fruit Details, Profile
+- **Responsive Design** – Mobile-first, fully responsive grid layouts
+- **Image Optimization** – Next.js Image component with remote image support
+- **Protected Routes** – Profile and detailed pages require authentication
+- **Profile Management** – Update name and avatar
+- **Clean Architecture** – Organized component structure
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: React 19 + TypeScript (via jsconfig)
+- **Styling**: Tailwind CSS v4 + DaisyUI + HeroUI
+- **Authentication**: Better Auth + MongoDB Adapter
+- **Database**: MongoDB
+- **Icons**: React Icons + Gravity UI
+- **Deployment Ready**: Optimized for Vercel
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- MongoDB database (local or cloud)
+- Google OAuth credentials (for social login)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/jackfruits.git
+   cd jackfruits
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Variables**
+
+   Create a `.env.local` file in the root:
+
+   ```env
+   JACK_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/jackfruits
+   GOOGLE_CLIENT_ID=your_google_client_id
+   GOOGLE_SECRET_ID=your_google_client_secret
+   ```
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) to see the result.
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── all-jackfruits/          # All fruits listing + dynamic [id] route
+│   ├── profile/                 # Protected user profile
+│   ├── singin/ & singup/        # Authentication pages
+│   ├── layout.js
+│   └── page.js                  # Home page
+├── components/
+│   ├── Banner/
+│   ├── Jackfruits/
+│   ├── JacksFruitsCard/
+│   ├── Navbar/
+│   ├── Footer/
+│   └── Modal/
+├── lib/
+│   ├── auth.js                  # Better Auth configuration
+│   └── auth-client.js
+└── images/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Key Pages
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Home** – Hero banner + Featured jackfruits
+- **All Jackfruits** – Grid view of all items
+- **Fruit Details** – Rich individual product view with prompt, rating, and metadata
+- **Profile** – User info with editable profile modal
+- **Authentication** – Clean sign up & sign in with Google support
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Authentication
 
-## Learn More
+- Email & Password authentication
+- Google OAuth integration
+- Protected routes using middleware (`/profile`, `/all-jackfruits/[id]`)
+- Session management with `better-auth`
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Data Source
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Jackfruit data is served from `public/data.json` containing 10 beautifully curated entries with:
+- High-quality images
+- Titles, descriptions, and AI prompts
+- Pricing and ratings
+- Categories and tags
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+Easiest deployment is on **Vercel**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project is already configured for Vercel with proper image remote patterns and environment variable support.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Made with ❤️ for beautiful jackfruit photography**
+
+---
+
+*Built with Next.js 16, Better Auth, Tailwind CSS, and lots of tropical vibes.*
+```
+
+---
+
+### How to use:
+
+1. Replace `https://github.com/yourusername/jackfruits.git` with your actual repo URL.
+2. Add a nice project screenshot or banner if you want.
+3. Update the license section if needed.
+
+Would you like a shorter version or a more technical/developer-focused README?
