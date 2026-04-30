@@ -6,18 +6,26 @@ import logoImg from "../../images/jackfruits.jpg";
 const Navbar = () => {
   const links = (
     <>
-      <li>
+      <Link href={"/"}>
+        <li>
+          {" "}
+          <a>Home</a>
+        </li>
+      </Link>
+      <Link href={"/all-jackfruits"}>
         {" "}
-        <a>Home</a>
-      </li>
-      <li>
+        <li>
+          {" "}
+          <a> ALL Jackfruits</a>
+        </li>
+      </Link>
+      <Link href={"/profile"}>
         {" "}
-        <a>Jackfruits</a>
-      </li>
-      <li>
-        {" "}
-        <a>Profile</a>
-      </li>
+        <li>
+          {" "}
+          <a>Profile</a>
+        </li>
+      </Link>
     </>
   );
   return (

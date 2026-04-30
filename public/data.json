@@ -5,10 +5,8 @@
     "imageUrl": "https://www.treedom.net/_next/image?url=https%3A%2F%2Fassets.treedom.net%2Fimage%2Fupload%2Fs--1AF8Kh_H--%2Fc_limit%2Cf_auto%2Fv1%2Fscientific_specie-gallery%2Fm%2F991986157b468527ec3658a9bf31108b.jpg&w=3840&q=75",
     "prompt": "Close-up shot of ripe jackfruit hanging from tree, natural light, high detail",
     "category": "Fruit",
-    "model": "SDXL",
-    "resolution": "768x1024",
-    "likes": 180,
-    "downloads": 40,
+    "price": 180,
+    "rating": 40,
     "createdAt": "2026-04-20T08:00:00Z",
     "tags": ["jackfruit", "nature", "tropical"]
   },
@@ -18,10 +16,8 @@
     "imageUrl": "https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2024/01/28/jack-43120_1280_0.jpg",
     "prompt": "Detailed texture of sliced jackfruit, vibrant yellow color, macro lens",
     "category": "Fruit",
-    "model": "SDXL",
-    "resolution": "768x1024",
-    "likes": 150,
-    "downloads": 35,
+    "price": 150,
+    "rating": 35,
     "createdAt": "2026-04-21T10:00:00Z",
     "tags": ["jackfruit", "texture", "food"]
   },
@@ -31,10 +27,8 @@
     "imageUrl": "https://www.treedom.net/_next/image?url=https%3A%2F%2Fassets.treedom.net%2Fimage%2Fupload%2Fs--1AF8Kh_H--%2Fc_limit%2Cf_auto%2Fv1%2Fscientific_specie-gallery%2Fm%2F991986157b468527ec3658a9bf31108b.jpg&w=3840&q=75",
     "prompt": "Wide shot of jackfruit tree in tropical environment, sunlight",
     "category": "Nature",
-    "model": "SDXL",
-    "resolution": "1024x768",
-    "likes": 200,
-    "downloads": 60,
+    "price": 200,
+    "rating": 60,
     "createdAt": "2026-04-22T07:00:00Z",
     "tags": ["tree", "jackfruit", "nature"]
   },
@@ -44,10 +38,8 @@
     "imageUrl": "https://i.ytimg.com/vi/mIWnCfflYWs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBQ6pGvIFrOVrkJrlkZSCYp6YRLTA",
     "prompt": "Bowl of fresh jackfruit pieces, soft lighting, food photography",
     "category": "Food",
-    "model": "SDXL",
-    "resolution": "768x768",
-    "likes": 175,
-    "downloads": 45,
+    "price": 175,
+    "rating": 45,
     "createdAt": "2026-04-23T09:30:00Z",
     "tags": ["food", "jackfruit", "fresh"]
   },
@@ -57,12 +49,10 @@
     "imageUrl": "https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2082513685.jpg",
     "prompt": "Raw green jackfruit on tree, natural daylight",
     "category": "Fruit",
-    "model": "SDXL",
-    "resolution": "768x1024",
-    "likes": 120,
-    "downloads": 28,
+    "price": 120,
+    "rating": 28,
     "createdAt": "2026-04-24T06:00:00Z",
-    "tags": ["raw", "jackfruit", "green"]
+    "tags": ["raw", "jackfruit", "grprice"]
   },
   {
     "id": 6,
@@ -70,10 +60,8 @@
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimbNLLyP6Scw2Os5OntA4yn-SUfAke8ml3w&s",
     "prompt": "Local market selling jackfruit, vibrant colors, candid shot",
     "category": "Market",
-    "model": "SDXL",
-    "resolution": "1024x768",
-    "likes": 190,
-    "downloads": 55,
+    "price": 190,
+    "rating": 55,
     "createdAt": "2026-04-25T11:00:00Z",
     "tags": ["market", "jackfruit", "local"]
   },
@@ -83,9 +71,8 @@
     "imageUrl": "https://assets.epicurious.com/photos/576c19ded15dd24f6aefe072/master/pass/jackfruit-23062016-01.jpg",
     "prompt": "Close-up of jackfruit seeds, detailed texture",
     "category": "Food",
-    "model": "SDXL",
-    "resolution": "768x768",
-    "likes": 90,
+   
+    "price": 90,
     "downloads": 20,
     "createdAt": "2026-04-25T12:00:00Z",
     "tags": ["seeds", "jackfruit"]
@@ -96,10 +83,9 @@
     "imageUrl": "https://www.foodunfolded.com/media/images/in-article-jackfruittree01.webp",
     "prompt": "Delicious jackfruit curry, traditional style, food photography",
     "category": "Food",
-    "model": "SDXL",
-    "resolution": "768x768",
-    "likes": 220,
-    "downloads": 70,
+  
+    "price": 220,
+    "rating": 70,
     "createdAt": "2026-04-26T13:00:00Z",
     "tags": ["curry", "jackfruit", "dish"]
   },
@@ -109,10 +95,9 @@
     "imageUrl": "https://5.imimg.com/data5/ANDROID/Default/2025/11/556926300/XH/BJ/MB/140245093/product-jpeg-500x500.jpg",
     "prompt": "Multiple jackfruits hanging on tree, natural light",
     "category": "Nature",
-    "model": "SDXL",
-    "resolution": "1024x768",
-    "likes": 160,
-    "downloads": 42,
+    
+    "price": 160,
+    "rating": 42,
     "createdAt": "2026-04-26T14:00:00Z",
     "tags": ["cluster", "jackfruit"]
   },
@@ -122,10 +107,8 @@
     "imageUrl": "https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2082513685.jpg",
     "prompt": "Open ripe jackfruit showing inside, vibrant color",
     "category": "Fruit",
-    "model": "SDXL",
-    "resolution": "768x1024",
-    "likes": 210,
-    "downloads": 65,
+    "price": 210,
+    "rating": 65,
     "createdAt": "2026-04-27T08:00:00Z",
     "tags": ["ripe", "jackfruit"]
   }
