@@ -6,7 +6,7 @@ import { FcRating } from "react-icons/fc";
 const Detailspage = async ({ params }) => {
   const { id } = await params;
   // console.log(data);
-  const res = await fetch(`http://localhost:3000/data.json`);
+  const res = await fetch("https://assingment-8-jacfruits.vercel.app/data.json");
   const fruits = await res.json();
 
   const fruit = fruits.find((fruit) => fruit.id == id);
