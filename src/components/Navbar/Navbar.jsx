@@ -4,31 +4,40 @@ import Link from "next/link";
 import logoImg from "../../images/jackfruits.jpg";
 import { authClient } from "@/lib/auth-client";
 import { Avatar } from "@heroui/react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const {data} = authClient.useSession();
-  
+  const { data } = authClient.useSession();
+  const path = usePathname();
+  // console.log('path', path);
+
   const user = data?.user;
   // console.log(jackfruits);
 
-  console.log(user, 'user');
+  console.log(user, "user");
 
   const links = (
     <>
-      <Link href={"/"}>
+      <Link
+        className={`${path === "/" ? "border-b border-b-purple-500 font-bold" : ""}`}
+        href={"/"}
+      >
         <li>
           {" "}
           <a>Home</a>
         </li>
       </Link>
-      <Link href={"/all-jackfruits"}>
+      <Link
+        className={`${path === "/all-jackfruits" ? "border-b border-b-purple-500 font-bold" : ""}`}
+        href={"/all-jackfruits"}
+      >
         {" "}
         <li>
           {" "}
           <a> ALL Jackfruits</a>
         </li>
       </Link>
-      <Link href={"/profile"}>
+      <Link className={`${path === "/profile" ? "border-b border-b-purple-500 font-bold" : ""}`} href={"/profile"}>
         {" "}
         <li>
           {" "}
@@ -38,9 +47,9 @@ const Navbar = () => {
     </>
   );
 
-  const handleSingOut = async() => {
+  const handleSingOut = async () => {
     await authClient.signOut();
-  }
+  };
   return (
     <div className="shadow-sm">
       <div className="navbar bg-base-100  max-w-[96%] lg:max-w-[80%] mx-auto">
@@ -115,7 +124,9 @@ const Navbar = () => {
               />
               <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
             </Avatar>
-            <button onClick={handleSingOut} className="btn">Logout</button>
+            <button onClick={handleSingOut} className="btn">
+              Logout
+            </button>
           </div>
         )}
       </div>
