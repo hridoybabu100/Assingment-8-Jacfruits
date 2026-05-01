@@ -37,7 +37,10 @@ const Navbar = () => {
           <a> ALL Jackfruits</a>
         </li>
       </Link>
-      <Link className={`${path === "/profile" ? "border-b border-b-purple-500 font-bold" : ""}`} href={"/profile"}>
+      <Link
+        className={`${path === "/profile" ? "border-b border-b-purple-500 font-bold" : ""}`}
+        href={"/profile"}
+      >
         {" "}
         <li>
           {" "}
@@ -116,14 +119,18 @@ const Navbar = () => {
 
         {user && (
           <div className="flex items-center gap-2">
-            <Avatar>
-              <Avatar.Image
-                alt={user?.title}
-                src={user?.image}
-                referrerPolicy="no-referrer"
-              />
-              <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
-            </Avatar>
+            <div className="">
+              {/* <p className="text-2xl font-bold">{user?.name}</p> */}
+              <Avatar>
+                <Avatar.Image
+                  alt={user?.title}
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+              </Avatar>
+            </div>
+
             <button onClick={handleSingOut} className="btn">
               Logout
             </button>

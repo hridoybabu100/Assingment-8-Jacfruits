@@ -10,7 +10,9 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 
 export default function SignUpPage() {
@@ -39,6 +41,12 @@ export default function SignUpPage() {
     if (!error){
         router.push('/')
     }
+    if(error){
+      toast.error("Error Singing Up ")
+    }
+    if(data){
+      toast.success("Sign Up sucssfull ! Please Check your email verify to your account.")
+    }
   };
 
   return (
@@ -49,13 +57,13 @@ export default function SignUpPage() {
         <Form className="flex flex-col gap-4" onSubmit={onSubmit}>
           <TextField isRequired name="name" type="text">
             <Label>Name</Label>
-            <Input placeholder="Enter your name" />
+            <Input className="w-full" placeholder="Enter your name" />
             <FieldError />
           </TextField>
 
           <TextField isRequired name="image" type="text">
             <Label>Image URL</Label>
-            <Input placeholder="Image URL" />
+            <Input className="w-full" placeholder="Image URL" />
             <FieldError />
           </TextField>
 
@@ -72,7 +80,7 @@ export default function SignUpPage() {
             }}
           >
             <Label>Email</Label>
-            <Input placeholder="john@example.com" />
+            <Input className="w-full" placeholder="Enter Your email" />
             <FieldError />
           </TextField>
 
@@ -96,7 +104,7 @@ export default function SignUpPage() {
             }}
           >
             <Label>Password</Label>
-            <Input placeholder="Enter your password" />
+            <Input className="w-full" placeholder="Enter your password" />
             <Description>
               Must be at least 8 characters with 1 uppercase and 1 number
             </Description>
@@ -104,10 +112,15 @@ export default function SignUpPage() {
           </TextField>
 
           <div className="flex gap-2">
-            <Button type="submit">Submit</Button>
+            <Button type="submit">Create Acoount</Button>
             <Button type="reset" variant="secondary">
               Reset
             </Button>
+          </div>
+          <div className="text-center">
+            <h1 className="text-xl font-bold">Already have an account</h1>
+           <a className="text-purple-600 font-bold border-b" href="/singin">Sign In </a>
+
           </div>
         </Form>
       </Card>
