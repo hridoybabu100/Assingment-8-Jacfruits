@@ -14,19 +14,16 @@ const Detailspage = async ({ params }) => {
   // console.log(fruit);
 
   return (
-    <div className="max-w-[80%] mx-auto my-6">
+    <div className="max-w-[96%] lg:max-w-[80%] mx-auto my-6">
       <h1 className="text-3xl font-bold text-black my-6">
         Jackfruits Details in hare
       </h1>
-     
 
-      
-      <div className="card bg-base-100 w-150 h-100 shadow-sm">
+      <div className="card bg-base-100 w-full  lg:w-150 h-100 shadow-sm">
         <figure className="relative w-full aspect-square">
           <Image
             src={fruit.imageUrl}
             fill
-           
             alt={fruit.title}
             className="object-cover"
           />
@@ -38,23 +35,20 @@ const Detailspage = async ({ params }) => {
             <p className="flex gap-2 items-center font-bold">
               <FcRating /> {fruit.rating}
             </p>
-
           </div>
-            <div>
-                <p>{fruit.prompt}</p>
-            </div>
-            <div>
-                <h4 className="font-bold text-black">{fruit.createdAt}</h4>
-            </div>
+          <div>
+            <p>{fruit.prompt}</p>
+          </div>
+          <div>
+            <h4 className="font-bold text-black">{fruit.createdAt}</h4>
+          </div>
           <div className="">
-            <Link href={'/'}>
+            <Link href={"/"}>
               <button className="btn btn-primary">Go Back</button>
             </Link>
           </div>
         </div>
-        
       </div>
-    
     </div>
   );
 };
