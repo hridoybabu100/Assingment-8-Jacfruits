@@ -34,11 +34,11 @@ export default function SignUpPage() {
     });
   };
   return (
-    <div className="my-10">
-      <Card className="border mx-auto w-125 py-10 mt-5">
+    <div className="my-10 max-w-[96%] lg:max-w-[80%] mx-auto">
+      <Card className="shadow bg-zinc-300 w-100 mx-auto py-10">
         <h1 className="text-center text-2xl font-bold">Sign In</h1>
 
-        <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+        <Form className="flex flex-col gap-4" onSubmit={onSubmit}>
           <TextField
             isRequired
             name="email"
@@ -91,7 +91,7 @@ export default function SignUpPage() {
           </div>
           <p className="text-center">Or</p>
         </Form>
-        <button onClick={googleOnClick} className="btn w-96 mx-auto rounded-2xl bg-primary text-white">
+        <button onClick={googleOnClick} className="btn rounded-2xl bg-primary text-white">
           <GrGoogle></GrGoogle> Sing in with Goggole
         </button>
       </Card>

@@ -43,7 +43,7 @@ const Navbar = () => {
   }
   return (
     <div className="shadow-sm">
-      <div className="navbar bg-base-100  max-w-[80%] mx-auto">
+      <div className="navbar bg-base-100  max-w-[96%] lg:max-w-[80%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -70,16 +70,16 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <div className="flex gap-2 items-center">
+          <div className="hidden lg:block">
             <Image
               src={logoImg}
               alt="logo"
               loading="eager"
               width={50}
               height={50}
-              className="object-cover h-10 w-10 rounded-full"
+              className="object-cover h-10 w-10 rounded-full inline-block"
             />
-            <h3 className="font-black text-lg">Jackfruits</h3>
+            <h3 className="font-black text-lg inline-block ml-2">Jackfruits</h3>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

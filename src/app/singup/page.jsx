@@ -42,11 +42,11 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="my-10">
-      <Card className="border mx-auto w-125 py-10 mt-5">
+    <div className="my-10 max-w-[96%] lg:max-w-[80%] mx-auto">
+      <Card className="mx-auto w-100 bg-zinc-300 py-10 mt-5">
         <h1 className="text-center text-2xl font-bold">Sign Up</h1>
 
-        <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+        <Form className="flex flex-col gap-4" onSubmit={onSubmit}>
           <TextField isRequired name="name" type="text">
             <Label>Name</Label>
             <Input placeholder="Enter your name" />

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="max-w-[80%] mx-auto my-6">
-        <div className="bg-[url('https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2453997129.jpg')] h-[80vh] w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl">
+    <div className="max-w-[96%] lg:max-w-[80%] mx-auto my-6">
+        <div className="bg-[url('https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2453997129.jpg')] h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl">
       {/* Overlay */}
       <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">
         <div className="max-w-7xl mx-auto px-6 text-white">
