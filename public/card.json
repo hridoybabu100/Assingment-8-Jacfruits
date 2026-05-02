@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Stay Hydrated",
+    "description": "Drink plenty of water and fresh jackfruit juice to stay cool in summer.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJS8uRwl6QQ3i7ur0xhTWr7GLnKvCgFPNSqg&s",
+    "category": "Summer Care Tips"
+  },
+  {
+    "id": 2,
+    "title": "Protect Your Skin",
+    "description": "Use sunscreen and include jackfruit in diet for natural vitamins.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQWVMEBBY8Szdi5QtrGHL0_1RpWTiv3DRgw&s",
+    "category": "Summer Care Tips"
+  },
+  {
+    "id": 3,
+    "title": "Eat Fresh Fruits",
+    "description": "Fresh jackfruit helps boost energy and keeps your body cool.",
+    "image": "https://www.shutterstock.com/image-photo/portrait-beauty-health-asian-woman-260nw-2492166627.jpg",
+    "category": "Summer Care Tips"
+  },
+  {
+    "id": 4,
+    "title": "Fresh Harvest Co.",
+    "description": "Premium quality jackfruits collected directly from farms.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWcIuQ8ZJh1JiA9j2-RETS-jha7SsO3G6CFw&s",
+    "category": "Top Brands"
+  },
+  {
+    "id": 5,
+    "title": "Tropical Fruits Ltd.",
+    "description": "Trusted brand for exporting fresh and organic jackfruits.",
+    "image": "https://img.magnific.com/free-vector/tropical-fruits-composition-with-pitaya-mango-dragon-fruit-cut-up-ripe-with-leaves-bunch_1284-19241.jpg",
+    "category": "Top Brands"
+  },
+  {
+    "id": 6,
+    "title": "Nature Basket",
+    "description": "Best place for naturally grown and chemical-free jackfruits.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZyiXJKTnkyV8cc9xJ-iDPfOAioAHNj6sww&s",
+    "category": "Top Brands"
+  }
+]

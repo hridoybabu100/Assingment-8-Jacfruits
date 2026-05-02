@@ -8,7 +8,7 @@ export async function proxy(request) {
     const session = await auth.api.getSession({
         headers : await headers()
     })
-    console.log(session, 'session');
+    // console.log(session, 'session');
     
 
     if(!session){
