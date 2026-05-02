@@ -2,7 +2,7 @@ import Card from "./Card";
 
 
 const BannedCard = async () => {
-  const res = await fetch("http://localhost:3000/card.json");
+  const res = await fetch("https://assingment-8-jacfruits.vercel.app/card.json");
   const banneds = await res.json();
   // console.log("banned", banneds);
 
