@@ -3,7 +3,9 @@ import React from 'react';
 
 const AllJackfruits = async() => {
 
-    const res = await fetch("https://assingment-8-jacfruits.vercel.app/data.json");
+    const res = await fetch("https://assingment-8-jacfruits.vercel.app/data.json",{
+        cache: "no-store"
+    });
     const allfruits = await res.json();
    
     return (

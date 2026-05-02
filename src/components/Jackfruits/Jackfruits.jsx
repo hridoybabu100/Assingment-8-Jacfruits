@@ -3,7 +3,9 @@ import JackfruitsCard from "../JacksFruitsCard/JackfruitsCard";
 
 const Jackfruits = async() => {
 
-    const res = await fetch("https://assingment-8-jacfruits.vercel.app/data.json");
+    const res = await fetch("https://assingment-8-jacfruits.vercel.app/data.json",{
+        cache: "no-store"
+    });
     const allfruits = await res.json();
     const jackfruits = allfruits.slice(0,3);
 
