@@ -52,7 +52,8 @@ export default function SignUpPage() {
   return (
     <div className="my-10 max-w-[96%] lg:max-w-[80%] mx-auto">
       <Card className="mx-auto w-100 shadow-md py-10 mt-5">
-        <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+        <h1 className="text-center text-3xl text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text font-bold">Create your Account</h1>
+        <p className="text-center"><small>Create a New Account then Login</small></p>
 
         <Form className="flex flex-col gap-4" onSubmit={onSubmit}>
           <TextField isRequired name="name" type="text">
