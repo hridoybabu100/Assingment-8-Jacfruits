@@ -2,7 +2,9 @@ import Card from "./Card";
 
 
 const BannedCard = async () => {
-  const res = await fetch("https://assingment-8-jacfruits.vercel.app/card.json");
+  const res = await fetch("https://assingment-8-jacfruits.vercel.app/card.json", {
+    cache : "no-store"
+  });
   const banneds = await res.json();
   // console.log("banned", banneds);
 
@@ -13,7 +15,7 @@ const BannedCard = async () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-pink-200 p-10">
         {
-            banneds.map((banned) => <Card key={banned.id} banned={banned}></Card> )
+            banneds.map((banned) => <Card key={banned.id} banned={banned}></Card>)
         }
       </div>
     </div>
