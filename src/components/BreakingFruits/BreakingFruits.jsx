@@ -45,15 +45,18 @@ const jackfruits = [
 
 const BreakingFruits = () => {
   return (
-    <div className="bg-pink-300 p-4">
-      <Marquee pauseOnHover={true}>
-        {jackfruits.map((news) => (
-          <span key={news.id} className="">
-            {news.headline}
-            {news.category}
-          </span>
-        ))}
-      </Marquee>
+    <div className="bg-pink-200 p-2">
+      <div className="flex max-w-[96%] lg:max-w-[80%] mx-auto">
+        <button className="btn bg-linear-65 from-purple-500 to-pink-500 text-white">Updates</button>
+        <Marquee pauseOnHover={true}>
+          {jackfruits.map((news) => (
+            <span key={news.id} className="text-purple-500 font-bold">
+              {news.headline}
+              {news.category}
+            </span>
+          ))}
+        </Marquee>
+      </div>
     </div>
   );
 };

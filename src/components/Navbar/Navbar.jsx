@@ -91,7 +91,7 @@ const Navbar = () => {
               height={50}
               className="object-cover h-10 w-10 rounded-full inline-block"
             />
-            <h3 className="font-black text-lg inline-block ml-2">Jackfruits</h3>
+            <h3 className="font-black text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text text-lg inline-block ml-2">Jackfruits</h3>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -104,13 +104,13 @@ const Navbar = () => {
               <li>
                 {" "}
                 <Link href={"/singin"}>
-                  <button className="btn">Singin</button>
+                  <button className="btn">Login</button>
                 </Link>
               </li>
               <li>
                 {" "}
                 <Link href={"/singup"}>
-                  <button className="btn">Singup</button>
+                  <button className="btn">Signup</button>
                 </Link>
               </li>
             </ul>

@@ -23,7 +23,7 @@ const ProfilePage = () => {
           <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
         </Avatar>
     
-        <p className="text-xl font-bold text-black">{user?.name}</p>
+        <p className="text-xl font-bold text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text">{user?.name}</p>
         <p>{user?.email}</p>
         <ContactModal></ContactModal>
       </Card>

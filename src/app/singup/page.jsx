@@ -51,7 +51,7 @@ export default function SignUpPage() {
 
   return (
     <div className="my-10 max-w-[96%] lg:max-w-[80%] mx-auto">
-      <Card className="mx-auto w-100 bg-zinc-300 py-10 mt-5">
+      <Card className="mx-auto w-100 shadow-md py-10 mt-5">
         <h1 className="text-center text-2xl font-bold">Sign Up</h1>
 
         <Form className="flex flex-col gap-4" onSubmit={onSubmit}>

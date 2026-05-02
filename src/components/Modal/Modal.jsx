@@ -19,44 +19,46 @@ export function ContactModal() {
     });
   };
   return (
-    <Modal>
-      <Button variant="secondary">
-        {" "}
-        <BiEdit></BiEdit> Updated Your Profile
-      </Button>
-      <Modal.Backdrop>
-        <Modal.Container placement="auto">
-          <Modal.Dialog className="sm:max-w-md">
-            <Modal.CloseTrigger />
-            <Modal.Header>
-              <Modal.Icon className="bg-accent-soft text-accent-soft-foreground"></Modal.Icon>
-              <Modal.Heading>Updated Profile</Modal.Heading>
-            </Modal.Header>
-            <Modal.Body className="p-6">
-              <Surface variant="default">
-                <form onSubmit={onSubmit} className="flex flex-col gap-4">
-                  <TextField className="w-full" name="name" type="text">
-                    <Label>Updated Name</Label>
-                    <Input placeholder="Enter your name" />
-                  </TextField>
-                  <TextField className="w-full" name="image" type="url">
-                    <Label>Update URL</Label>
-                    <Input placeholder="Enter your phone number" />
-                  </TextField>
-                  <Modal.Footer>
-                    <Button slot="close" variant="secondary">
-                      Cancel
-                    </Button>
-                    <Button type="submit" slot="close">
-                      Updated Profile
-                    </Button>
-                  </Modal.Footer>
-                </form>
-              </Surface>
-            </Modal.Body>
-          </Modal.Dialog>
-        </Modal.Container>
-      </Modal.Backdrop>
-    </Modal>
+    <div>
+      <Modal>
+        <Button variant="secondary">
+          {" "}
+          <BiEdit></BiEdit> Updated Your Profile
+        </Button>
+        <Modal.Backdrop>
+          <Modal.Container placement="auto">
+            <Modal.Dialog className="sm:max-w-md">
+              <Modal.CloseTrigger />
+              <Modal.Header>
+                <Modal.Icon className="bg-accent-soft text-accent-soft-foreground"></Modal.Icon>
+                <Modal.Heading>Updated Profile</Modal.Heading>
+              </Modal.Header>
+              <Modal.Body className="p-6">
+                <Surface variant="default">
+                  <form onSubmit={onSubmit} className="flex flex-col gap-4">
+                    <TextField className="w-full" name="name" type="text">
+                      <Label>Updated Name</Label>
+                      <Input placeholder="Enter your name" />
+                    </TextField>
+                    <TextField className="w-full" name="image" type="url">
+                      <Label>Update URL</Label>
+                      <Input placeholder="Enter your phone number" />
+                    </TextField>
+                    <Modal.Footer>
+                      <Button slot="close" variant="secondary">
+                        Cancel
+                      </Button>
+                      <Button type="submit" slot="close">
+                        Updated Profile
+                      </Button>
+                    </Modal.Footer>
+                  </form>
+                </Surface>
+              </Modal.Body>
+            </Modal.Dialog>
+          </Modal.Container>
+        </Modal.Backdrop>
+      </Modal>
+    </div>
   );
 }

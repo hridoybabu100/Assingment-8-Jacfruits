@@ -28,7 +28,7 @@ const JackfruitsCard = ({ fruit }) => {
         </div>
         <div className="">
             <Link href={`/all-jackfruits/${fruit.id}`}>
-          <button className="btn w-full btn-primary">View Details</button>
+          <button className="btn w-full bg-linear-65 from-purple-500 to-pink-500 text-white">View Details</button>
             </Link>
         </div>
       </div>
