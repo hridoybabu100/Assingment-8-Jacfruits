@@ -10,8 +10,8 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { BiCheck } from "react-icons/bi";
 import { toast } from "react-toastify";
 
 
@@ -113,7 +113,7 @@ export default function SignUpPage() {
           </TextField>
 
           <div className="flex gap-2">
-            <Button type="submit">Create Acoount</Button>
+            <Button type="submit"> <BiCheck/> Create Acoount</Button>
             <Button type="reset" variant="secondary">
               Reset
             </Button>

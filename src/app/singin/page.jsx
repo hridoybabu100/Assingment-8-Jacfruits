@@ -1,21 +1,23 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-
 import {
   Button,
   Card,
+  Checkbox,
   Description,
   FieldError,
   Form,
   Input,
-  InputGroup,
+ 
   Label,
   TextField,
 } from "@heroui/react";
+import { BiCheck } from "react-icons/bi";
 import { GrGoogle } from "react-icons/gr";
 import { toast } from "react-toastify";
 
 export default function SignUpPage() {
+  
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -95,8 +97,10 @@ export default function SignUpPage() {
               <FieldError />
             </TextField>
 
+           
+
             <div className="flex gap-2 py-1">
-              <Button type="submit">Submit</Button>
+              <Button type="submit">  <BiCheck /> Submit</Button>
               <Button type="reset" variant="secondary">
                 Reset
               </Button>

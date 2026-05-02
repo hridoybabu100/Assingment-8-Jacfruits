@@ -45,8 +45,8 @@ const jackfruits = [
 
 const BreakingFruits = () => {
   return (
-    <div className="bg-pink-200 p-2">
-      <div className="flex max-w-[96%] lg:max-w-[80%] mx-auto">
+    <div className="p-2 mt-10">
+      <div className="flex max-w-[96%] lg:max-w-[80%] mx-auto bg-pink-100">
         <button className="btn bg-linear-65 from-purple-500 to-pink-500 text-white">Updates</button>
         <Marquee pauseOnHover={true}>
           {jackfruits.map((news) => (

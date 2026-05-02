@@ -7,8 +7,8 @@ import Jackfruits from "@/components/Jackfruits/Jackfruits";
 export default function Home() {
   return (
     <div>
-      <BreakingFruits></BreakingFruits>
       <Banner></Banner>
+      <BreakingFruits></BreakingFruits>
       <Jackfruits></Jackfruits>
       <BannedCard></BannedCard>
     </div>

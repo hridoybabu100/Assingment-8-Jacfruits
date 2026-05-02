@@ -26,7 +26,7 @@ export function ContactModal() {
           <BiEdit></BiEdit> Updated Your Profile
         </Button>
         <Modal.Backdrop>
-          <Modal.Container placement="auto">
+          <Modal.Container placement="midle">
             <Modal.Dialog className="sm:max-w-md">
               <Modal.CloseTrigger />
               <Modal.Header>
