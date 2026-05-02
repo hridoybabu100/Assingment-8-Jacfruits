@@ -137,7 +137,7 @@ const Navbar = () => {
               </Avatar>
             </div>
 
-            <button onClick={handleSingOut} className="btn">
+            <button onClick={handleSingOut} className="btn bg-linear-65 from-purple-500 to-pink-500 text-white">
               Logout
             </button>
           </div>
