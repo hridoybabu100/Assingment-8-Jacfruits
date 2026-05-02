@@ -15,8 +15,8 @@ const Detailspage = async ({ params }) => {
 
   return (
     <div className="max-w-[96%] lg:max-w-[80%] mx-auto my-6">
-      <h1 className="text-3xl font-bold text-black my-6">
-        Jackfruits Details in hare
+      <h1 className="text-3xl text-center lg:text-left font-bold text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text my-6">
+        Jackfruits Details.
       </h1>
 
       <div className="card bg-base-100 w-full  lg:w-150 h-100 shadow-sm">
@@ -44,7 +44,7 @@ const Detailspage = async ({ params }) => {
           </div>
           <div className="">
             <Link href={"/"}>
-              <button className="btn btn-primary">Go Back</button>
+              <button className="btn bg-linear-65 from-purple-500 to-pink-500 text-white">Go Back</button>
             </Link>
           </div>
         </div>

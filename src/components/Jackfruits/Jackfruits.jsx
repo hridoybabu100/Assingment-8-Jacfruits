@@ -13,7 +13,7 @@ const Jackfruits = async() => {
     
     return (
         <div className="max-w-[96%] lg:max-w-[80%] mx-auto my-8">
-            <h1 className='text-4xl text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text font-bold my-6'>The jackfruit is the largest tree fruit.</h1>
+            <h1 className='text-4xl text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text font-bold my-6 text-center lg:text-left'>The jackfruit is the largest tree fruit.</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-5">
 
                 {

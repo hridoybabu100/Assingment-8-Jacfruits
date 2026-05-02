@@ -1,5 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
+
 import {
   Button,
   Card,
@@ -7,6 +8,7 @@ import {
   FieldError,
   Form,
   Input,
+  InputGroup,
   Label,
   TextField,
 } from "@heroui/react";
@@ -44,7 +46,9 @@ export default function SignUpPage() {
   return (
     <div className="my-10 max-w-[96%] lg:max-w-[80%] mx-auto">
       <Card className="shadow-md bg-zinc-00 w-100 mx-auto py-10">
-        <h1 className="text-center text-3xl text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text font-bold">Welcome Back!</h1>
+        <h1 className="text-center text-3xl text-transparent bg-linear-65 from-purple-500 to-pink-500 bg-clip-text font-bold">
+          Welcome Back!
+        </h1>
         <div className="">
           <Form onSubmit={onSubmit}>
             <TextField
