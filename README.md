@@ -1,46 +1,52 @@
-**Here's a clean, modern README.md** for your **Jackfruits** project:
+**✅ Smart & Professional README.md**
 
 ```markdown
 # 🍈 Jackfruits
 
-A beautiful, modern Next.js web application showcasing stunning jackfruit photography with authentication, dynamic routing, and a sleek UI.
+A modern, beautiful Next.js 16 web application showcasing stunning jackfruit photography with full authentication, dynamic routing, and a sleek UI.
 
 ![Jackfruits Banner](https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2453997129.jpg)
 
 ## ✨ Features
 
-- **Modern UI/UX** – Built with Tailwind CSS + DaisyUI + HeroUI (Radix-based components)
+- **Modern UI/UX** – Built with Tailwind CSS v4 + DaisyUI + HeroUI (Radix-based components)
 - **Full Authentication** – Email/password + Google OAuth using **Better Auth** + MongoDB
-- **Dynamic Pages** – Home, All Jackfruits, Individual Fruit Details, Profile
-- **Responsive Design** – Mobile-first, fully responsive grid layouts
-- **Image Optimization** – Next.js Image component with remote image support
-- **Protected Routes** – Profile and detailed pages require authentication
-- **Profile Management** – Update name and avatar
-- **Clean Architecture** – Organized component structure
+- **Dynamic Routing** – Home, All Jackfruits, Individual Fruit Details, Profile
+- **Protected Routes** – Profile and fruit detail pages require authentication
+- **Profile Management** – Update name and avatar with modal
+- **Image Optimization** – Next.js 16 Image component with remote patterns
+- **Responsive Design** – Mobile-first, fully responsive
+- **Real-time Updates** – Breaking news marquee + Featured sections
+- **Toast Notifications** – User feedback with `react-toastify`
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 16 (App Router)
-- **Language**: React 19 + TypeScript (via jsconfig)
-- **Styling**: Tailwind CSS v4 + DaisyUI + HeroUI
-- **Authentication**: Better Auth + MongoDB Adapter
-- **Database**: MongoDB
-- **Icons**: React Icons + Gravity UI
-- **Deployment Ready**: Optimized for Vercel
+| Technology              | Version     |
+|------------------------|-------------|
+| **Next.js**            | 16.2.4     |
+| **React**              | 19.2.4     |
+| **TypeScript**         | via jsconfig |
+| **Tailwind CSS**       | v4         |
+| **DaisyUI**            | ^5.5.19    |
+| **HeroUI**             | ^3.0.3     |
+| **Better Auth**        | ^1.6.9     |
+| **MongoDB Adapter**    | ^1.6.9     |
+| **Framer Motion**      | ^12.38.0   |
+| **React Fast Marquee** | ^1.6.5     |
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js 18+
-- MongoDB database (local or cloud)
-- Google OAuth credentials (for social login)
+- MongoDB (local or MongoDB Atlas)
+- Google OAuth credentials (optional but recommended)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/jackfruits.git
-   cd jackfruits
+   git clone <your-repo-url>
+   cd Assingment-8-Jacfruits-main
    ```
 
 2. **Install dependencies**
@@ -50,10 +56,11 @@ A beautiful, modern Next.js web application showcasing stunning jackfruit photog
 
 3. **Environment Variables**
 
-   Create a `.env.local` file in the root:
+   Create `.env.local` in the root:
 
    ```env
    JACK_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/jackfruits
+
    GOOGLE_CLIENT_ID=your_google_client_id
    GOOGLE_SECRET_ID=your_google_client_secret
    ```
@@ -63,85 +70,99 @@ A beautiful, modern Next.js web application showcasing stunning jackfruit photog
    npm run dev
    ```
 
-   Open [http://localhost:3000](http://localhost:3000) to see the result.
+   Open [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Structure
 
-```
+```bash
 src/
 ├── app/
-│   ├── all-jackfruits/          # All fruits listing + dynamic [id] route
-│   ├── profile/                 # Protected user profile
-│   ├── singin/ & singup/        # Authentication pages
+│   ├── all-jackfruits/           # All fruits + dynamic [id] route
+│   ├── profile/                  # Protected profile page
+│   ├── singin/ & singup/         # Authentication pages
 │   ├── layout.js
-│   └── page.js                  # Home page
+│   └── page.js                   # Home
 ├── components/
 │   ├── Banner/
 │   ├── Jackfruits/
 │   ├── JacksFruitsCard/
+│   ├── Bannedcard/
+│   ├── Modal/
 │   ├── Navbar/
-│   ├── Footer/
-│   └── Modal/
+│   └── Footer/
 ├── lib/
-│   ├── auth.js                  # Better Auth configuration
+│   ├── auth.js                   # Better Auth config
 │   └── auth-client.js
-└── images/
+├── images/
+public/
+├── data.json                     # Jackfruit gallery data
+└── card.json                     # Top brands data
 ```
-
-## 🎨 Key Pages
-
-- **Home** – Hero banner + Featured jackfruits
-- **All Jackfruits** – Grid view of all items
-- **Fruit Details** – Rich individual product view with prompt, rating, and metadata
-- **Profile** – User info with editable profile modal
-- **Authentication** – Clean sign up & sign in with Google support
 
 ## 🔐 Authentication
 
 - Email & Password authentication
-- Google OAuth integration
+- Google OAuth support
 - Protected routes using middleware (`/profile`, `/all-jackfruits/[id]`)
-- Session management with `better-auth`
+- Session management with **Better Auth**
 
-## 📸 Data Source
+## 📸 Data
 
-Jackfruit data is served from `public/data.json` containing 10 beautifully curated entries with:
-- High-quality images
-- Titles, descriptions, and AI prompts
-- Pricing and ratings
-- Categories and tags
+- **Gallery**: `public/data.json` (10 curated jackfruit images with metadata)
+- **Top Brands**: `public/card.json`
+
+Each fruit card includes:
+- High-quality image
+- Title, price, rating
+- AI prompt description
+- Dynamic detail page
+
+## 🎨 Key Pages
+
+- **Home** – Hero banner + Featured jackfruits + Breaking news
+- **All Jackfruits** – Responsive grid with all items
+- **Fruit Details** – Rich view with prompt, rating, price
+- **Profile** – User info with editable modal
+- **Auth** – Clean sign up & sign in
 
 ## 🚀 Deployment
 
-Easiest deployment is on **Vercel**:
+Optimized for **Vercel**:
 
 ```bash
 npm run build
 ```
 
-The project is already configured for Vercel with proper image remote patterns and environment variable support.
+Make sure to add your environment variables in Vercel dashboard.
 
-## 📄 License
+## 📄 Scripts
 
-This project is open source and available under the [MIT License](LICENSE).
+```json
+{
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint"
+}
+```
+
+## 🤝 Contributing
+
+Feel free to fork and submit pull requests. This project was built as an assignment but is open for improvements.
+
+## 📜 License
+
+This project is open source and available under the **MIT License**.
 
 ---
 
 **Made with ❤️ for beautiful jackfruit photography**
 
+*Built with Next.js 16, Better Auth, Tailwind CSS v4, and tropical vibes.*
+
 ---
 
-*Built with Next.js 16, Better Auth, Tailwind CSS, and lots of tropical vibes.*
+Would you like a **shorter version** or a **developer-focused** version with architecture details?
 ```
 
----
-
-### How to use:
-
-1. Replace `https://github.com/yourusername/jackfruits.git` with your actual repo URL.
-2. Add a nice project screenshot or banner if you want.
-3. Update the license section if needed.
-
-Would you like a shorter version or a more technical/developer-focused README?
-
-
+**This README is clean, professional, informative, and visually appealing.** Let me know if you want any modifications!
