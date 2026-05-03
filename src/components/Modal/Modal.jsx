@@ -3,6 +3,7 @@
 import { authClient } from "@/lib/auth-client";
 import { Button, Input, Label, Modal, Surface, TextField } from "@heroui/react";
 import { BiEdit } from "react-icons/bi";
+import { FaUserCircle } from "react-icons/fa";
 
 export function ContactModal() {
   const onSubmit = async (e) => {
@@ -30,6 +31,7 @@ export function ContactModal() {
             <Modal.Dialog className="sm:max-w-md">
               <Modal.CloseTrigger />
               <Modal.Header>
+               
                 <Modal.Icon className="bg-accent-soft text-accent-soft-foreground"></Modal.Icon>
                 <Modal.Heading>Updated Profile</Modal.Heading>
               </Modal.Header>
@@ -42,7 +44,7 @@ export function ContactModal() {
                     </TextField>
                     <TextField className="w-full" name="image" type="url">
                       <Label>Update URL</Label>
-                      <Input placeholder="Enter your phone number" />
+                      <Input placeholder="Image URL" />
                     </TextField>
                     <Modal.Footer>
                       <Button slot="close" variant="secondary">
