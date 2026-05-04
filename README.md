@@ -1,23 +1,6 @@
 **✅ Modern & Professional README.md**
 
 ```markdown
-<div>
-  <img src="https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2453997129.jpg" alt="Jackfruits Banner" width="100%" style="border-radius: 16px; margin-bottom: 20px;" />
-
-  <h1>🍈 Jackfruits</h1>
-  <p><strong>A stunning Next.js 16 showcase of jackfruit photography with beautiful UI, full authentication, and dynamic routing.</strong></p>
-
-  <a href="https://assingment-8-jacfruits.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20Demo-View%20Site-FF4081?style=for-the-badge&logo=vercel" alt="Live Demo" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Next.js-16.2.4-black?style=for-the-badge&logo=next.js" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwindcss" />
-  </a>
-
-</div>
 
 ---
 
