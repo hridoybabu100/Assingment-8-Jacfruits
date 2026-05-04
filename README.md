@@ -1,7 +1,7 @@
 **✅ Modern & Professional README.md**
 
 ```markdown
-<div align="center">
+<div>
   <img src="https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_2453997129.jpg" alt="Jackfruits Banner" width="100%" style="border-radius: 16px; margin-bottom: 20px;" />
 
   <h1>🍈 Jackfruits</h1>
